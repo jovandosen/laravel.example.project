@@ -29,6 +29,7 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <a class="navbar-brand" href="{{ route('testing') }}">Test</a>
+                <a class="navbar-brand" href="{{ route('post.data') }}">Posts</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

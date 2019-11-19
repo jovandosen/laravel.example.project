@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/test', 'TestController@test')->name('testing');
 Route::post('/test', 'TestController@getData');
+
+Route::get('/posts', 'TestController@posts')->name('post.data');

@@ -44,4 +44,11 @@ class TestController extends Controller
     	}
 
     }
+
+    public function posts()
+    {
+    	$posts = PostModel::all();
+
+    	return view('posts', ['posts' => $posts]);
+    }
 }
