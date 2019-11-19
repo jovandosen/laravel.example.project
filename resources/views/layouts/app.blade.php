@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/test.css') }}">
 </head>
 <body>
     <div id="app">
@@ -26,6 +28,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                <a class="navbar-brand" href="{{ route('testing') }}">Test</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,5 +79,7 @@
             @yield('content')
         </main>
     </div>
+
+    <script type="text/javascript" src="{{ asset('js/test.js') }}"></script>
 </body>
 </html>
